@@ -1,3 +1,4 @@
+/*eslint-env node */
 /**
  * Copyright 2014, 2016 IBM Corp.
  *
@@ -27,7 +28,7 @@ var settings = module.exports = {
     uiPort: process.env.VCAP_APP_PORT || 1880,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
-    debugMaxLength: 10000,
+    debugMaxLength: 20000,
     apiMaxLength: 1000000,
 	
     // Add the bluemix-specific nodes in
