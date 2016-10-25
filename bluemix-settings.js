@@ -27,7 +27,8 @@ var settings = module.exports = {
     uiPort: process.env.VCAP_APP_PORT || 1880,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
-    debugMaxLength: 1000,
+    debugMaxLength: 10000,
+    apiMaxLength: 1000000,
 
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
@@ -49,7 +50,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: {process: process}, 
 
     storageModule: require("./couchstorage")
 }
