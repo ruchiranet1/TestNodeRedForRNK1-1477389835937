@@ -29,7 +29,7 @@ var settings = module.exports = {
     serialReconnectTime: 15000,
     debugMaxLength: 10000,
     apiMaxLength: 1000000,
-
+	
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
 
@@ -50,7 +50,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: {process: process}, 
+    functionGlobalContext: {process: process},
 
     storageModule: require("./couchstorage")
 }
@@ -74,7 +74,7 @@ if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
             }
         }
     }
-} 
+}
 
 settings.couchAppname = process.env.NODE_RED_APPLICATION_NAME || VCAP_APPLICATION['application_name'];
 
