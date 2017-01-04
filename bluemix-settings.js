@@ -47,7 +47,7 @@ var settings = module.exports = {
     // You can protect the user interface with a userid and password by using the following property
     // the password must be an md5 hash  eg.. 5f4dcc3b5aa765d61d8327deb882cf99 ('password')
     //httpAdminAuth : {user:"user",pass:"5f4dcc3b5aa765d61d8327deb882cf99"},
-    httpNodeAuth: {user:"naoHlbUser",pass:"5f4dcc3b5aa765d61d8327deb882cf99"}, 
+    httpNodeAuth: {user:"naoHlbUser",pass:"0f40b92a69e23b0732439b5e27f9954ea689ebbf"}, 
     //adminAuth: {type: "credentials",users: [{username: "user", password: "5f4dcc3b5aa765d61d8327deb882cf99",permissions: "*"   }]},
 
     // Serve up the welcome page
